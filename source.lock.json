@@ -1,0 +1,14 @@
+{
+  "odoo": {
+    "edition": "Community",
+    "repository": "https://github.com/odoo/odoo",
+    "branch": "19.0",
+    "commit": "bccb550d5a5a1dfd81e6c234a7fa9a7794fc5702",
+    "archive": "https://codeload.github.com/odoo/odoo/zip/bccb550d5a5a1dfd81e6c234a7fa9a7794fc5702"
+  },
+  "local_runtime": {
+    "python": "3.12.3",
+    "postgresql": "16.15",
+    "rtlcss": "4.3.0"
+  }
+}
