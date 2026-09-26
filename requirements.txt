@@ -1,0 +1,6 @@
+# External Python dependencies declared by Cybrosys base_accounting_kit.
+# Install into the club virtual environment, never the other Odoo environments.
+openpyxl>=3.1,<4
+ofxparse==0.21
+qifparse==0.5
+XlsxWriter>=3.1,<4

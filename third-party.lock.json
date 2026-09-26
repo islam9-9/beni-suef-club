@@ -1,0 +1,13 @@
+{
+  "cybrosys": {
+    "repository": "https://github.com/CybroOdoo/CybroAddons.git",
+    "branch": "19.0",
+    "commit": "c046a0f0f08d6160a4d0a895e266443096bc49a6",
+    "modules": {
+      "base_accounting_kit": "19.0.3.3.1",
+      "base_account_budget": "19.0.1.0.2",
+      "cybrosys_support_client": "19.0.1.0.1"
+    },
+    "license": "LGPL-3"
+  }
+}
