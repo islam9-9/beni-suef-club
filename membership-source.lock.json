@@ -1,5 +1,5 @@
 {
-  "scope": "Evaluation only - not installed in the club or generic baseline",
+  "scope": "Installed in club database after evaluation; excluded from generic baseline",
   "repository": "https://github.com/OCA/vertical-association.git",
   "branch": "19.0",
   "commit": "8153173d345263f35c86f30b3451d8062f1cb219",

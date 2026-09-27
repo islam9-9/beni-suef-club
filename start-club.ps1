@@ -7,7 +7,8 @@ $clubNode = 'C:\Users\accis\.cache\codex-runtimes\codex-primary-runtime\dependen
 $env:Path = (Join-Path $clubRuntime 'frontend\node_modules\.bin') + ';' + $clubNode + ';C:\Program Files\Odoo 19.0e.20251117\thirdparty;' + $env:Path
 if (-not (Get-NetTCPConnection -LocalPort 5495 -State Listen -ErrorAction SilentlyContinue)) {
     $clubPgArgs = '-D "' + (Join-Path $clubRuntime 'pgdata') + '" -l "' + (Join-Path $clubRuntime 'logs\postgres.log') + '" -w start'
-    $clubPg = Start-Process -FilePath (Join-Path $clubRuntime 'pgsql\bin\pg_ctl.exe') -ArgumentList $clubPgArgs -WindowStyle Hidden -PassThru -Wait
+    $clubPg = Start-Process -FilePath (Join-Path $clubRuntime 'pgsql\bin\pg_ctl.exe') -ArgumentList $clubPgArgs -WindowStyle Hidden -PassThru
+    $clubPg.WaitForExit()
     if ($clubPg.ExitCode -ne 0) { throw 'Club PostgreSQL failed to start; check logs/postgres.log' }
 }
 if (Get-NetTCPConnection -LocalPort 8095 -State Listen -ErrorAction SilentlyContinue) {
