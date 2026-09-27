@@ -1,0 +1,22 @@
+body.bsc_login_page {
+    background: radial-gradient(ellipse at 10% 0%, #285c88 0, transparent 55%),
+        radial-gradient(ellipse at 100% 100%, #512c35 0, transparent 48%), #142e42 !important;
+    .o_database_list {
+        max-width: 460px !important;
+        border-top: 5px solid #aa2b22 !important;
+        border-bottom: 3px solid #d6a62b !important;
+        border-radius: 20px !important;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, .28);
+    }
+    .cw_eyebrow { color: #a32b24; letter-spacing: 3px; }
+    .cw_welcome h1 { color: #142e42; font-size: 25px; font-weight: 700; }
+    .oe_login_buttons .btn-primary { background: #245b94; border-color: #245b94; }
+    .oe_login_buttons .btn-primary:hover { background: #193f68; border-color: #193f68; }
+    a { color: #245b94; }
+    .form-control:focus { border-color: #245b94; box-shadow: 0 0 0 3px rgba(36,91,148,.16); }
+    @media (max-width: 480px) {
+        .container.py-5 { padding-block: 20px !important; }
+        .o_database_list .card-body { padding: 24px; }
+        .cw_welcome h1 { font-size: 22px; }
+    }
+}

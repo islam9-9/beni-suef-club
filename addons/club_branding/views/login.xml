@@ -1,0 +1,20 @@
+<odoo>
+    <template id="club_login" inherit_id="community_workspace.workspace_login" name="Beni Suef Club Login" priority="30">
+        <xpath expr="//t[@t-set='body_classname']" position="attributes">
+            <attribute name="t-value">'bg-100 cw_login_page bsc_login_page'</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('cw_welcome')]" position="replace">
+            <div class="cw_welcome bsc_welcome text-center mb-4" dir="rtl">
+                <span class="cw_eyebrow">BSC · 1928</span>
+                <h1>نادي بني سويف الرياضي</h1>
+                <p>أهلًا بك في نظام إدارة النادي</p>
+            </div>
+        </xpath>
+        <xpath expr="//img" position="attributes">
+            <attribute name="src">/club_branding/static/img/club_logo.png</attribute>
+            <attribute name="t-attf-src"/>
+            <attribute name="alt">شعار نادي بني سويف الرياضي</attribute>
+            <attribute name="style">height: 150px; width: 150px; object-fit: contain; border-radius: 18px;</attribute>
+        </xpath>
+    </template>
+</odoo>

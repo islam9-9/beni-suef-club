@@ -88,7 +88,8 @@ print(json.dumps({'restore': 'PASS', 'company': env.company.name, 'transactions'
 """)
 report = json.loads(next(line for line in verification.splitlines() if line.startswith('{"restore"')))
 (folder / 'verification.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
-shutil.copytree(HERE / 'addons', folder / 'addons', ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
+# Explicit allowlist prevents client branding from leaking into generic packages.
+shutil.copytree(HERE / 'addons/community_workspace', folder / 'addons/community_workspace', ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
 lock = json.loads((HERE / 'third-party.lock.json').read_text())
 for vendor, checkout in [('cybrosys', 'CybroAddons-19'), ('muk', 'MuK-19')]:
     for module in lock[vendor]['modules']:
