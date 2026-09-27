@@ -1,0 +1,11 @@
+{
+  "scope": "Evaluation only - not installed in the club or generic baseline",
+  "repository": "https://github.com/OCA/vertical-association.git",
+  "branch": "19.0",
+  "commit": "8153173d345263f35c86f30b3451d8062f1cb219",
+  "modules": {
+    "membership": "19.0.1.1.0",
+    "membership_delegated_partner": "19.0.1.0.0"
+  },
+  "licenses": "Preserve upstream LICENSE and per-file notices; membership manifest LGPL-3 includes files carrying AGPL notices; delegated module AGPL-3."
+}
