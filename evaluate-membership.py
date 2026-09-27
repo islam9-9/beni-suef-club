@@ -55,4 +55,3 @@ report = {
 env.cr.commit()
 Path(r'C:\Users\accis\ClubRuntime\membership-evaluation.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 print(json.dumps(report))
-

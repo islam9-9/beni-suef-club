@@ -10,6 +10,9 @@ import zipfile
 
 here = Path(__file__).resolve().parent
 root = Path(json.loads((here / 'runtime.json').read_text())['runtime'])
+lock = json.loads((here / 'membership-source.lock.json').read_text())
+revision = subprocess.check_output(['git', '-C', str(root / 'downloads/OCA-association-19'), 'rev-parse', 'HEAD'], text=True).strip()
+assert revision == lock['commit'], 'OCA checkout differs from the evaluated revision'
 backup = Path(json.loads(Path(r'D:\odoo com\basic\LATEST.json').read_text())['folder'])
 db = 'club_membership_lab'
 cfg = root / 'membership-lab.conf'
