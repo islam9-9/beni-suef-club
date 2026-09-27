@@ -9,5 +9,20 @@
       "cybrosys_support_client": "19.0.1.0.1"
     },
     "license": "LGPL-3"
+  },
+  "muk": {
+    "repository": "https://github.com/muk-it/odoo-modules.git",
+    "branch": "19.0",
+    "commit": "d12ed2cf54ec3a201396dc00574ea8df0d6ced5c",
+    "modules": {
+      "muk_web_appsbar": "19.0.1.1.12",
+      "muk_web_chatter": "19.0.1.4.10",
+      "muk_web_colors": "19.0.1.0.9",
+      "muk_web_dialog": "19.0.1.0.12",
+      "muk_web_group": "19.0.1.0.8",
+      "muk_web_refresh": "19.0.1.1.12",
+      "muk_web_theme": "19.0.1.4.9"
+    },
+    "license": "LGPL-3"
   }
 }

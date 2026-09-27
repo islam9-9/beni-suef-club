@@ -1,0 +1,19 @@
+// Presentation only. No accounting, access-rights or workflow overrides.
+.o_web_client {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    .o_main_navbar { box-shadow: 0 2px 10px rgba(17, 34, 51, .12); }
+    .o_control_panel { padding-block: 14px; }
+    .btn { border-radius: 7px; }
+    .o_form_view .o_form_sheet_bg > .o_form_sheet {
+        border-radius: 12px;
+        box-shadow: 0 3px 18px rgba(17, 34, 51, .05);
+    }
+    .o_list_view .o_list_table thead th { padding-block: 12px; }
+    .o_list_view .o_list_table tbody td { padding-block: 9px; }
+    .mk_app_menu .o_app > a .mk_app_icon { border-radius: 16px; padding: 13px; }
+    .mk_app_menu .o_app > a .mk_app_name { margin-top: 10px; font-weight: 600; }
+    a:focus-visible, button:focus-visible { outline-offset: 3px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .o_web_client .mk_app_menu .mk_app_icon { transition: none !important; }
+}

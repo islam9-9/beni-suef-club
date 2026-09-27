@@ -1,0 +1,20 @@
+body.cw_login_page {
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: radial-gradient(ellipse at 15% 15%, #d4edef 0, transparent 48%), #edf2f6 !important;
+    .o_database_list {
+        max-width: 420px !important;
+        background: #fff !important;
+        border-radius: 20px;
+        box-shadow: 0 18px 60px rgba(23, 45, 64, .12);
+        border-top: 5px solid #087f8c !important;
+        .card-body { padding: 32px; }
+    }
+    .cw_eyebrow { color: #087f8c; font-weight: 700; font-size: 13px; }
+    .cw_welcome h1 { color: #172d40; font-size: 27px; margin-block: 10px; }
+    .cw_welcome p { color: #5d6d7e; font-size: 14px; }
+    .form-control { min-height: 46px; border-radius: 8px; }
+    .oe_login_buttons .btn-primary { min-height: 46px; background: #087f8c; border-color: #087f8c; border-radius: 8px; }
+    .oe_login_buttons .btn-primary:hover { background: #066572; }
+    input[name="login"] { direction: ltr; text-align: start; }
+}

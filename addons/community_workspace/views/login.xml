@@ -1,0 +1,14 @@
+<odoo>
+    <template id="workspace_login" inherit_id="web.login_layout" name="Community Workspace Login">
+        <xpath expr="//t[@t-set='body_classname']" position="attributes">
+            <attribute name="t-value">'bg-100 cw_login_page'</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('card-body')]/div[1]" position="after">
+            <div class="cw_welcome text-center mb-4" dir="rtl">
+                <span class="cw_eyebrow">مساحة العمل</span>
+                <h1>مرحبًا بك</h1>
+                <p>سجّل دخولك للوصول إلى أعمالك</p>
+            </div>
+        </xpath>
+    </template>
+</odoo>
