@@ -1,0 +1,18 @@
+<templates xml:space="preserve">
+    <t t-name="club_branding.Sidebar" t-inherit="muk_web_appsbar.AppsBar" t-inherit-mode="extension">
+        <xpath expr="//ul[hasclass('mk_apps_sidebar_menu')]" position="before">
+            <div class="bsc_sidebar_identity" dir="rtl">
+                <img src="/club_branding/static/img/club_logo.png" alt="شعار نادي بني سويف الرياضي"/>
+                <strong>نادي بني سويف الرياضي</strong>
+                <span>نظام إدارة النادي</span>
+            </div>
+        </xpath>
+        <xpath expr="//ul[hasclass('mk_apps_sidebar_menu')]" position="attributes">
+            <attribute name="aria-label">تطبيقات النادي</attribute>
+        </xpath>
+        <xpath expr="//a[hasclass('nav-link')]" position="attributes">
+            <attribute name="t-att-aria-current">app.id === this.appMenuService.getCurrentApp()?.id ? 'page' : undefined</attribute>
+            <attribute name="t-att-title">app.label</attribute>
+        </xpath>
+    </t>
+</templates>

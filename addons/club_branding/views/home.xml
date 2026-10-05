@@ -1,0 +1,7 @@
+<odoo>
+    <record id="action_club_home" model="ir.actions.client">
+        <field name="name">الرئيسية</field>
+        <field name="tag">club_branding.home</field>
+    </record>
+    <menuitem id="menu_club_home" name="الرئيسية" action="action_club_home" sequence="-10" web_icon="club_branding,static/img/club_logo.png" groups="base.group_user"/>
+</odoo>
