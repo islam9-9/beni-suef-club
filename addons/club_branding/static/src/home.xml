@@ -1,6 +1,6 @@
 <templates xml:space="preserve">
     <t t-name="club_branding.Home">
-        <div class="bsc_home" dir="rtl">
+        <div class="bsc_home" dir="ltr">
             <header class="bsc_home_header">
                 <div><span class="bsc_home_eyebrow">BSC · 1928</span><h1>أهلًا بك في نادي بني سويف الرياضي</h1><p>اختر القسم الذي تريد العمل عليه</p></div>
                 <img src="/club_branding/static/img/club_logo.png" alt="شعار النادي"/>
