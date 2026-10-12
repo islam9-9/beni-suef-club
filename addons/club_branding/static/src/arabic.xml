@@ -1,0 +1,16 @@
+<templates xml:space="preserve">
+    <t t-name="club_branding.ArabicSupport" t-inherit="cybrosys_support_client.ClientSupportSystray" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_client_support_systray')]" position="attributes">
+            <attribute name="title">التواصل مع دعم سايبروسيس (Alt+Shift+H)</attribute>
+            <attribute name="aria-label">التواصل مع دعم سايبروسيس</attribute>
+        </xpath>
+    </t>
+    <t t-name="club_branding.ArabicRefresh" t-inherit="web.ControlPanel" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_cp_refresh')]/button" position="attributes">
+            <attribute name="t-att-title">this.autoLoadState.active ? 'التحديث التلقائي مفعّل (انقر مرتين للإيقاف)' : 'تحديث (انقر مرتين للتحديث التلقائي)'</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_cp_refresh')]/span" position="replace">
+            <span t-if="this.autoLoadState.active and this.autoLoadState.counter &gt; 0" class="small text-muted"><t t-out="this.autoLoadState.counter"/> ثانية</span>
+        </xpath>
+    </t>
+</templates>
