@@ -1,0 +1,171 @@
+# Club Arabic supplements. License: LGPL-3.0. Exact matching common terms reuse Odoo Arabic translations.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 21:46+0000\n"
+"PO-Revision-Date: 2026-10-12 21:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar_001\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: membership
+#: model_terms:ir.ui.view,arch_db:membership.membership_products_kanban
+msgid ""
+"<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"Period\" title=\"Period\"/>\n"
+"                            <strong> From: </strong>"
+msgstr ""
+"<i class=\"fa fa-clock-o\" role=\"img\" aria-label=\"الفترة\" "
+"title=\"الفترة\"/><strong> من: </strong>"
+
+#. module: membership
+#: model:ir.model.fields,help:membership.field_res_partner__is_adhered_member
+#: model:ir.model.fields,help:membership.field_res_users__is_adhered_member
+msgid ""
+"A member who is associated to another one, but whose membership are "
+"independent."
+msgstr "عضو مرتبط بعضو آخر، لكن عضوية كل منهما مستقلة."
+
+#. module: membership
+#. odoo-python
+#: code:addons/membership/models/product_template.py:0
+msgid "A membership product must have a start date and an end date."
+msgstr "يجب تحديد تاريخ بداية ونهاية لمنتج العضوية."
+
+#. module: membership
+#. odoo-python
+#: code:addons/membership/models/membership_line.py:0
+msgid ""
+"Can not remove membership line related to an invoice. Please, cancel invoice"
+" or remove invoice line instead"
+msgstr ""
+"لا يمكن حذف بند عضوية مرتبط بفاتورة. يرجى إلغاء الفاتورة أو حذف بند الفاتورة"
+" بدلًا من ذلك."
+
+#. module: membership
+#: model:ir.model.fields,help:membership.field_res_partner__membership_start_adhered
+#: model:ir.model.fields,help:membership.field_res_users__membership_start_adhered
+msgid "Date from which partner is adhered."
+msgstr "تاريخ بدء انتساب الشريك."
+
+#. module: membership
+#: model:ir.model.fields,help:membership.field_res_partner__membership_cancel
+#: model:ir.model.fields,help:membership.field_res_users__membership_cancel
+msgid "Date on which membership has been cancelled."
+msgstr "تاريخ إلغاء العضوية."
+
+#. module: membership
+#: model:ir.model.fields,help:membership.field_res_partner__membership_stop
+#: model:ir.model.fields,help:membership.field_res_users__membership_stop
+msgid "Date when the latest partner's membership ends."
+msgstr "تاريخ انتهاء أحدث عضوية للشريك."
+
+#. module: membership
+#: model:ir.model.fields,help:membership.field_res_partner__membership_last_start
+#: model:ir.model.fields,help:membership.field_res_users__membership_last_start
+msgid "Date when the partner became a member for the last time."
+msgstr "تاريخ بدء أحدث عضوية للشريك."
+
+#. module: membership
+#: model:ir.model.fields,help:membership.field_res_partner__membership_start
+#: model:ir.model.fields,help:membership.field_res_users__membership_start
+msgid "Earliest historical date this partner ever became a member."
+msgstr "أقدم تاريخ لبدء عضوية هذا الشريك."
+
+#. module: membership
+#: model:ir.model.constraint,message:membership.constraint_membership_membership_line_start_date_greater
+msgid "Error ! Ending Date cannot be set before Beginning Date."
+msgstr "خطأ: لا يمكن أن يسبق تاريخ النهاية تاريخ البداية."
+
+#. module: membership
+#: model:ir.module.category,description:membership.module_category_membership_management
+msgid "Helps you manage operations for managing memberships."
+msgstr "يساعدك على إدارة عمليات العضويات."
+
+#. module: membership
+#: model:ir.model.fields,field_description:membership.field_res_partner__is_adhered_member
+#: model:ir.model.fields,field_description:membership.field_res_users__is_adhered_member
+msgid "Is Adhered Member"
+msgstr "عضو منتسب"
+
+#. module: membership
+#: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
+msgid "Last Start Month"
+msgstr "شهر بدء أحدث عضوية"
+
+#. module: membership
+#: model:res.groups,name:membership.group_membership_manager
+msgid "Manager"
+msgstr "المدير"
+
+#. module: membership
+#: model:ir.model.fields,field_description:membership.field_res_partner__membership_start_adhered
+#: model:ir.model.fields,field_description:membership.field_res_users__membership_start_adhered
+msgid "Membership Adhered Start Date"
+msgstr "تاريخ بداية الانتساب للعضوية"
+
+#. module: membership
+#: model:ir.actions.act_window,name:membership.membership_category_action
+#: model:ir.model.fields,field_description:membership.field_res_partner__membership_category_ids
+#: model:ir.model.fields,field_description:membership.field_res_users__membership_category_ids
+#: model:ir.ui.menu,name:membership.menu_membership_category
+msgid "Membership Categories"
+msgstr "تصنيفات العضويات"
+
+#. module: membership
+#: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
+msgid "Membership Category"
+msgstr "تصنيف العضوية"
+
+#. module: membership
+#: model:ir.model.fields,field_description:membership.field_res_partner__membership_last_start
+#: model:ir.model.fields,field_description:membership.field_res_users__membership_last_start
+msgid "Membership Last Start Date"
+msgstr "تاريخ بداية أحدث عضوية"
+
+#. module: membership
+#: model:ir.model,name:membership.model_membership_membership_category
+#: model:ir.model.fields,field_description:membership.field_membership_membership_line__category_id
+#: model:ir.model.fields,field_description:membership.field_product_product__membership_category_id
+#: model:ir.model.fields,field_description:membership.field_product_template__membership_category_id
+#: model_terms:ir.ui.view,arch_db:membership.membership_product_search_form_view
+msgid "Membership category"
+msgstr "تصنيف العضوية"
+
+#. module: membership
+#: model:ir.model.fields,field_description:membership.field_account_move_line__membership_line_ids
+msgid "Membership lines"
+msgstr "بنود العضويات"
+
+#. module: membership
+#: model:ir.model.fields,field_description:membership.field_membership_membership_category__name
+msgid "Name"
+msgstr "اسم"
+
+#. module: membership
+#: model_terms:ir.actions.act_window,help:membership.action_membership_members
+msgid ""
+"Odoo helps you easily track all activities related to a member:\n"
+"                  Current Membership Status, Discussions and History of Membership, etc."
+msgstr ""
+"يساعدك أودو على متابعة أنشطة العضو بسهولة، بما فيها حالة العضوية الحالية "
+"والمناقشات وسجل العضويات."
+
+#. module: membership
+#: model_terms:ir.ui.view,arch_db:membership.view_res_partner_member_filter
+msgid "Starting month of last membership period"
+msgstr "شهر بداية أحدث فترة عضوية"
+
+#. module: membership
+#. odoo-python
+#: code:addons/membership/models/membership_category.py:0
+msgid ""
+"You cannot change the Company, as this Membership Category is used by "
+"Product Template (%s), which has an incompatible assigned Company."
+msgstr ""
+"لا يمكن تغيير الشركة لأن تصنيف العضوية مستخدم في قالب المنتج (%s) المرتبط "
+"بشركة غير متوافقة."
